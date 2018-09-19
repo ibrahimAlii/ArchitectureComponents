@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="delivery"
+            type="ali.ib.listproduct.data.Delivery" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{clickListener}">
+
+        <ali.ib.listproduct.view.CircleImageView
+            android:id="@+id/delivery_item_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_location"
+            app:imageFromUrl="@{delivery.imageUrl}"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/delivery_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{delivery.description}"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/delivery_item_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal"
+            tools:text="Delivering a car by motorcycle" />
+
+        <TextView
+            android:id="@+id/delivery_item_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{delivery.location.address}"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintTop_toBottomOf="@id/delivery_item_title"
+            app:layout_constraintStart_toEndOf="@id/delivery_item_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="1"
+            android:layout_margin="@dimen/_2sdp"
+            android:textSize="@dimen/_9sdp"
+            android:drawableStart="@drawable/ic_location"
+            tools:text="Delivering a car by motorcycle" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

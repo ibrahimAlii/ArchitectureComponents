@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ListProduct</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_api_key">AIzaSyBsZrtj9Pe8sR9-FryNUfb6q5ky0kKezTA</string>
+
+    <string name="deliver_list_title">Deliver List</string>
+    <string name="deliver_details_title">Deliver Detail</string>
+    <string name="a11y_deliver_item_image">Deliver documents to Andrio</string>
+</resources>
