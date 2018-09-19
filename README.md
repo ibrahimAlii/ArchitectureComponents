@@ -1,6 +1,6 @@
 # ListProduct
 
-**Pattern used MVVM**
+**Using MVVM Pattern**
 
 This app built with the new archeticture-components from google.
 
