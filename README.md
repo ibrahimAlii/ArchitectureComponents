@@ -15,7 +15,7 @@ This app built with the new archeticture-components from google.
 #RecycleView
 #Google-Maps
 
-#To-Solve
+**To-Solve:**
 
 - (Tests) No UI/Unit tests included
 - (Code) (Critical) Network failure at first time will make the app cannot load data in the coming launch
