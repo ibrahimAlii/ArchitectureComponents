@@ -14,7 +14,7 @@ import androidx.navigation.findNavController
 /**
  * Adapter for the [RecyclerView] in [DeliverListFragment].
  */
-class DeliveriesAdapter : ListAdapter<Delivery, DeliveriesAdapter.ViewHolder>(PlantDiffCallback()) {
+class DeliveriesAdapter : ListAdapter<Delivery, DeliveriesAdapter.ViewHolder>(DeliverDiffCallback()) {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val delivery = getItem(position)
