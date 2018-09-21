@@ -15,6 +15,11 @@ This app built with the new archeticture-components from google.
 #RecycleView
 #Google-Maps
 
+**Running the webservice:**
+
+You need to run a back-end side using NodeJs:
+`npm install` and then `npm start` (The files included in project)
+
 **To-Solve:**
 
 - (Tests) No UI/Unit tests included
