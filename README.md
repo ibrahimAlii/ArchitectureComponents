@@ -22,7 +22,7 @@ You need to run a back-end side using NodeJs:
 
 **To-Solve:**
 
-- (Tests) No UI/Unit tests included
+- (Tests) UI/Unit tests 
 - (Code) (Critical) Network failure at first time will make the app cannot load data in the coming launch
 - (Code) (Major) In `DeliveriesListViewModel`, redundant `if...else` case
 - (Code) (Minor) When using `Moshi`, `@Json` should be used instead of `@SerializedName`
